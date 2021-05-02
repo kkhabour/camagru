@@ -1,0 +1,36 @@
+
+<article data-id={id} class="main-content-posts-article">
+        <header class="main-content-posts-article-header">
+            <nav class="main-content-posts-article-header-nav">
+                <div class="main-content-posts-article-header-nav-profileimg" style=" background-image: url({userimage});"></div>
+                <a href="" class="main-content-posts-article-header-nav-username">{username}</a>
+            </nav>
+        </header>
+
+        <div calss="main-content-posts-article-img">
+            <img class="img" src="{postimage}" {ondblclick} >
+        </div>
+
+        <div class=main-content-posts-article-comment>
+            <div class="main-content-posts-article-comment-like">
+                <img src="{likeicon}" {onclick}>
+                <span>
+                    {likes} likes
+                </span>
+            </div>
+
+            <div class="main-content-posts-article-comment-data">
+
+                {viewcomments}
+                {comments}
+
+
+            </div>
+
+            <span class="main-content-posts-article-comment-timestamp">{time}</span>
+
+
+            {commentinput}
+
+        </div>
+</article>

@@ -1,0 +1,80 @@
+.popup {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: solid black 1px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.content {
+  min-height: 70%;
+  background-color: white;
+  display: flex;
+  border-radius: 4px;
+}
+
+/* content image */
+.content-img {
+  display: flex;
+  align-items: center;
+}
+.content-img > img {
+  max-width: 364px;
+  height: auto;
+}
+
+/* content comments section*/
+
+.content-comments {
+  width: 320px;
+}
+
+.content-comments .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border-bottom: solid lightgray 1px;
+}
+
+.content-comments > .nav > .user {
+  display: flex;
+  align-items: center;
+}
+
+.content-comments > .nav > .user > img {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.content-comments > .nav > .close {
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.popup > .content > .content-comments > .comments > .comment {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 4px 8px;
+  
+}
+
+
+.popup > .content > .content-comments > .comments > .comment > div > span:first-child {
+    font-weight: bold;
+}
+
+
+.popup > .content > .content-comments > .comments > .comment > span {
+    color: gray;
+}

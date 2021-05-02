@@ -1,0 +1,19 @@
+.header-nav-list > * {
+    margin-left: 24px;
+}
+
+.header-nav-list a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+.header-nav-list > a:first-child {
+    color: black;
+}
+.header-nav-list > a:last-child{
+    outline: none;
+    border: solid transparent 1px;    
+    background-color: black;
+    border-radius: 4px;
+    padding: 8px 24px;
+}
